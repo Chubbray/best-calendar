@@ -26,23 +26,31 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="date" class="lead"></p>
     </header>
   
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="row">
-        <div class="col-md-2">
-          <script>
-            var time = "hours"
-
-            moment.duration().hours();
-          </script>
-          <div class="col-md-10">
-
-          </div>
-        </div>
-       </div> 
+      <div class="row time-block" id="9">
+        <div class="col-md-1 hour" >9AM</div>
+        <input type="text" id="eventDetails-9" class="col-10 event">
+        <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button"></button>
+      </div>
+          
+      <div class="row time-block" id="10">
+        <div class="col-md-1 hour" >10AM</div>
+        <input type="text" id="eventDetails-10" class="col-10 event">
+        <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button"></button>
+      </div>
+            
+      <div class="row time-block" id="11">
+        <div class="col-md-1 hour" >11AM</div>
+        <input type="text" id="eventDetails-11" class="col-10 event">
+        <button class="col-1 btn border rounded-0 bg-info fas fa-save save-Btn" type="button"></button>
+      </div>  
+          
+        
+       
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
