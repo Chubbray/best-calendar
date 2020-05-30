@@ -16,14 +16,16 @@ function setStatus() {
         else {
             $((this).children[1]).addClass("past")
         }
-    })
+    });
+
+    //localStorage.setItem("text", JSON.stringify, (lists));
 }
 
 setStatus();
 
 function setPlaner() {
     var timer = setInterval(function (){
-        var currentDate = moment().format("dddd, MMMM, YYYY");
+        var currentDate = moment().format("dddd, MMM Do YYYY");
         date.text(currentDate);
     }, 1000);
 
