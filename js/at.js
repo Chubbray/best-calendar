@@ -17,9 +17,9 @@ function setStatus() {
             $((this).children[1]).addClass("past")
         }
     });
-
-    //localStorage.setItem("text", JSON.stringify, (lists));
 }
+
+
 
 setStatus();
 
